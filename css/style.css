@@ -1,0 +1,250 @@
+/*
+ * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
+ * Richard Clark (http://richclarkdesign.com)
+ * http://cssreset.com
+ */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+
+
+/*******************************************
+ * flickrApp styling
+ ******************************************/
+body {
+    background: #060c15 url('../img/bg.png') left top repeat-x; 
+    color: #fff; 
+    font-size: 12px; 
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+a {
+    color: #fff; 
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color:#fcb712;
+}
+
+.clearfix:after {content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.clearfix {display:inline-block;}
+.clearfix {display:block;}
+
+#page {
+    max-width: 914px; 
+    margin: 0 auto; 
+    overflow: hidden;
+}
+#header {height: 138px}
+
+.logo {
+    color: #fcb712;
+    float: left;
+    font-size: 82px;
+    font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.search {
+    margin-top: 75px;
+    float: right;
+    position: relative;
+}
+
+#flickbox {
+    border: 1px solid #8f100c; 
+    display: inline-block; 
+    height: 30px; 
+    line-height: 30px; 
+    padding:0 20px 0 5px; 
+    width: 285px;
+}
+
+#fsearch {
+    background:url('../img/search.png') 0 0 no-repeat; 
+    display: inline-block; 
+    height: 18px;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 17px;
+    z-index: 2;
+}
+
+#fsearch span {
+    visibility: hidden;
+}
+
+#banner {
+    height: 500px; 
+    margin-bottom: 10px
+}
+
+#banner img {
+    width: 100%; 
+    height: 100%; 
+    border: 0
+}
+
+#flick a {
+    display: block; 
+    float: left; 
+    margin-right: 2.19780219780%; 
+    margin-bottom: 2.19780219780%;
+    width: 18.233333333%;
+}
+
+#flick a:nth-child(5n+5) {
+    margin-right: 0
+}
+
+#flick a:hover img, #flick a:active img {
+    box-sizing:border-box;
+    border: 2px solid #fcb712;  
+    display: block; 
+    opacity: 0.6
+}
+
+#flick img {
+    width: 100%
+}
+
+#share {border-bottom: 5px solid #fff; height: 30px; margin-top: 10px; margin-bottom: 20px;}
+.share-btn {
+    background-color: #550910;
+    display: inline-block;
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    padding:0 10px;
+    width: 50px;
+    color: #fcb712;
+    text-transform: uppercase;
+    text-align: center;
+}
+.share-btn span {
+    background: url('../img/share.png') 0 0 no-repeat;
+    position: absolute;
+    top:-82px;
+    right: 5px;
+    display: none;
+    width: 194px;
+    height: 85px;
+}
+.share-btn:hover span {display: block;}
+/*******************************************
+ * BREAKPOINT MEDIUM-SMALL <= 767
+ ******************************************/
+@media only screen and (max-width: 767px) {
+
+body {
+    background: #060c15
+}
+#header {height: 25px}
+#banner {height: 250px}
+.logo {
+    font-size: 24px;
+    margin-top: 0px;
+}
+.search {
+    margin-top: 0;
+}
+
+.bleed {margin: 10px}
+
+
+#flickbox {
+    height: 24px; 
+    line-height: 24px; 
+    width: 185px;
+}
+
+#fsearch {
+    top: 5px;
+    right: 10px;
+}
+}
