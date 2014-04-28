@@ -178,7 +178,7 @@ a:hover, a:active {
     margin-right: 0
 }
 
-#flick a:hover img, #flick a:active img {
+#flick a:hover img {
     box-sizing:border-box;
     border: 2px solid #fcb712;  
     display: block; 
